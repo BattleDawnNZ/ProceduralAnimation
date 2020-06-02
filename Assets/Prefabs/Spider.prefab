@@ -121,7 +121,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2105028103311130195}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 268091996216318176}
@@ -210,9 +210,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveInputFactor: 5
-  velocity: {x: 0, y: 0, z: 1}
-  walkSpeed: 2
-  sprintSpeed: 5
+  inputVelocity: {x: 0, y: 0, z: 0}
+  worldVelocity: {x: 0, y: 0, z: 0}
+  walkSpeed: 20
+  sprintSpeed: 40
   rotateInputFactor: 45
   rotationSpeed: 90
   averageRotationRadius: 2.95
@@ -225,10 +226,41 @@ MonoBehaviour:
   - {fileID: 3403643476721133122}
   - {fileID: 8429217212983054527}
   - {fileID: 7784181356445165847}
+  index: 0
   dynamicGait: 1
   timeBetweenSteps: 1.5
-  maxTargetDistance: 1
+  stepDurationRatio: 2
+  maxTargetDistance: 8
   lastStep: 0
+  useAlignment: 1
+  nextLegTri: 0400000006000000050000000700000001000000000000000300000002000000
+  sensitivityCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  desiredSufaceDist: -2
+  dist: 0
+  grounded: 0
 --- !u!1 &7333169836809937529
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1469045232700182293
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -179,7 +180,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4299067701619709854}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.5}
+  m_LocalPosition: {x: 0, y: -1, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 9138911414261534906}
@@ -209,7 +210,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4299067703176812236}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 2}
+  m_LocalPosition: {x: 0, y: 3, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 9138911414261534906}
@@ -342,12 +343,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8798f86e6b1223b418b498000ad8d9f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optimalRestingPosition: {x: 0, y: 0, z: 2.25}
+  stepPoint: {x: 0, y: 0, z: 0}
+  stepNormal: {x: 0, y: 0, z: 0}
+  optimalRestingPosition: {x: 0, y: 0, z: 2}
   worldVelocity: {x: 0, y: 0, z: 0}
   worldTarget: {x: 0, y: 0, z: 0}
   ikTarget: {fileID: 4299067701619708001}
   ikPoleTarget: {fileID: 4299067703176812239}
-  placementRandomization: 0
+  placementRandomization: 0.5
   autoStep: 0
   solidLayer:
     serializedVersion: 2
@@ -419,7 +422,7 @@ Transform:
   m_GameObject: {fileID: 7102450025123954497}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 0.2, y: 2, z: 0.2}
+  m_LocalScale: {x: 0.15, y: 2, z: 0.15}
   m_Children: []
   m_Father: {fileID: 736196745473804153}
   m_RootOrder: 1
@@ -512,7 +515,7 @@ Transform:
   m_GameObject: {fileID: 7622017248287277106}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 0.2, y: 1, z: 0.2}
+  m_LocalScale: {x: 0.25, y: 1, z: 0.25}
   m_Children: []
   m_Father: {fileID: 1320156239722740890}
   m_RootOrder: 1
